@@ -24,6 +24,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style type="text/css">
+      /* ---- reset ---- */
+       /* ---- particles.js container ---- */
+       #particles-js{ position:absolute; top: 90px; width: 100%; height: 700px !important; background-color: #fffff; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */
+       .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+    </style>
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -35,6 +41,7 @@
     <div class="preloader">
         <span><i class="lnr lnr-sun"></i></span>
     </div>
+
     <!-- MainMenu-Area -->
     <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
         <div class="container-fluid">
@@ -58,7 +65,7 @@
                     <li><a href="#contact_page">Contact</a></li>
                 </ul>
                 <div class="right-button hidden-xs">
-                    <a href="#">Learn More</a>
+                    <!-- <a href="#">Learn More</a> -->
                 </div>
             </div>
         </div>
@@ -66,7 +73,8 @@
     <!-- MainMenu-Area-End -->
     <!-- Home-Area -->
     <header class="home-area overlay" id="home_page">
-        <div class="container">
+      <div id="particles-js"></div>
+        <div class="container"></div>>
             <div class="row">
                 <div class="col-xs-12 hidden-sm col-md-5">
                     <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
@@ -402,7 +410,7 @@
                     </figure>
                 </div>
                 <div class="col-xs-12 col-md-6 section-padding">
-                    <h3 class="white-color">Deploy Your App</h3>
+                    <h3 class="white-color">Release Your App</h3>
                     <div class="space-20"></div>
                     <p>Let us help you deliever an amazing application as soon as possible.  The faster we get in contact, the faster we can build more great projects.</p>
                     <div class="space-60"></div>
@@ -663,6 +671,122 @@
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script type="text/javascript">
+    particlesJS('particles-js',
+    {
+      "particles": {
+        "number": {
+          "value": 67,
+          "density": {
+            "enable": true,
+            "value_area": 801.70362019291
+          }
+        },
+        "color": {
+          "value": "#3b3266"
+        },
+        "shape": {
+          "type": "polygon",
+          "stroke": {
+            "width": 0,
+            "color": "#000"
+          },
+          "polygon": {
+            "nb_sides": 6
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.19240886884629838,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 5,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 52.11073531253915,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 10,
+            "size_min": 40,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 160.34072403858198,
+          "color": "#4acfff",
+          "opacity": 0.2244770136540148,
+          "width": 2.244770136540148
+        },
+        "move": {
+          "enable": true,
+          "speed": 1.0,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    }
+
+    );;
+    </script>
 </body>
 
 </html>

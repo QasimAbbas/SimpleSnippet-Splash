@@ -248,11 +248,7 @@ input:-webkit-autofill:focus {
     width: 100%;
     height: 100%;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,2c539e+100;Blue+3D+%232 */
-  background: #2c539e; /* Old browsers */
-  background: -moz-linear-gradient(top,  #2c539e 0%, #2c539e 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #2c539e 0%,#2c539e 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #2c539e 0%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+
 
     opacity: 0.6;
     /* IE6-9 fallback on horizontal gradient */
@@ -313,13 +309,9 @@ input:-webkit-autofill:focus {
     width: 100%;
     height: 100%;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,2c539e+100;Blue+3D+%232 */
-  background: #2c539e; /* Old browsers */
-  background: -moz-linear-gradient(top,  #2c539e 0%, #2c539e 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #2c539e 0%,#2c539e 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #2c539e 0%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=0 ); /* IE6-9 */
+    background-color: #ffffff;
     z-index: -1;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -341,7 +333,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area .right-button a {
-    color: #ffffff;
+    color: #071f5e;
     padding: 10px 40px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -354,13 +346,14 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area .right-button a:hover {
     background-color: rgba(255, 255, 255, 1);
-    color: #768ede;
+    color: #071f5e;
 }
 
 .mainmenu-area ul.mainmenu {
     text-align: center;
     float: none;
     display: block;
+
 }
 
 .mainmenu-area ul.mainmenu li {
@@ -370,7 +363,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area ul.nav.navbar-nav li a {
-    color: #ffffff;
+    color: ##071f5e;
     padding: 10px 2px;
     text-transform: capitalize;
     background: transparent;
@@ -381,7 +374,7 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area ul.nav.navbar-nav li a:hover,
 .mainmenu-area ul.nav.navbar-nav li.active a {
-    border-bottom-color: #ffffff;
+    border-bottom-color: #071f5e;
 }
 
 .mainmenu-area .navbar-brand {
@@ -401,7 +394,7 @@ input:-webkit-autofill:focus {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #8790af;
+    color: ##071f5e;
     font-weight: 600;
 }
 
@@ -422,9 +415,9 @@ input:-webkit-autofill:focus {
 
 .home-area {
     width: 100%;
-    background: url('images/header-bg.jpg') no-repeat scroll center bottom / cover;
+    /* background: url('images/header-bg.jpg') no-repeat scroll center bottom / cover; */
     padding-top: 26vh;
-    color: #ffffff;
+    color: #071f5e;
     margin-bottom: 100px;
 }
 
